@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo cm_geeb_ca-userdebug
+add_lunch_combo cm_geehrc_intl-userdebug

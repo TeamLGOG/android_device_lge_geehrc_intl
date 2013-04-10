@@ -20,10 +20,10 @@
 # Everything in this directory will become public
 
 ## (2) Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/lge/geeb_common/geeb_common-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/gee/gee-vendor.mk)
 
 ## overlays
-DEVICE_PACKAGE_OVERLAYS += device/lge/geeb_ca/overlay
+DEVICE_PACKAGE_OVERLAYS += device/lge/geehrc_intl/overlay
 
 ## common overlays
 DEVICE_PACKAGE_OVERLAYS += device/lge/gee-common/overlay-gsm
@@ -49,17 +49,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 		# Vold configuration
 PRODUCT_COPY_FILES += \
-    device/lge/geeb_ca/vold.fstab:system/etc/vold.fstab
+    device/lge/geehrc_intl/vold.fstab:system/etc/vold.fstab
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/lge/geeb_ca/ramdisk/init.geeb.rc:root/init.geeb.rc \
-    device/lge/geeb_ca/ramdisk/ueventd.geeb.rc:root/ueventd.geeb.rc \
-    device/lge/geeb_ca/ramdisk/fstab.gee:root/fstab.gee
+    device/lge/geehrc_intl/ramdisk/init.geeb.rc:root/init.geeb.rc \
+    device/lge/geehrc_intl/ramdisk/ueventd.geeb.rc:root/ueventd.geeb.rc \
+    device/lge/geehrc_intl/ramdisk/fstab.gee:root/fstab.gee
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 # CameraHAL
-PRODUCT_PACKAGES += camera.geeb
+PRODUCT_PACKAGES += camera.geehrc
