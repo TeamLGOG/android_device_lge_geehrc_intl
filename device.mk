@@ -53,8 +53,8 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/lge/geehrc_intl/ramdisk/init.geehrc.rc:root/init.geehrc.rc \
-    device/lge/geehrc_intl/ramdisk/ueventd.geehrc.rc:root/ueventd.geehrc.rc \
+    device/lge/geehrc_intl/ramdisk/init.geehrc_intl.rc:root/init.geehrc_intl.rc \
+    device/lge/geehrc_intl/ramdisk/ueventd.geehrc_intl.rc:root/ueventd.geehrc_intl.rc \
     device/lge/geehrc_intl/ramdisk/fstab.gee:root/fstab.gee
 
 # These are the hardware-specific features
@@ -62,4 +62,4 @@ PRODUCT_COPY_FILES += \
    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 # CameraHAL
-PRODUCT_PACKAGES += camera.geehrc
+PRODUCT_PACKAGES += camera.geehrc_intl
