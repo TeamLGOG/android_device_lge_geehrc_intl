@@ -53,8 +53,8 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/lge/geehrc_intl/ramdisk/init.geeb.rc:root/init.geeb.rc \
-    device/lge/geehrc_intl/ramdisk/ueventd.geeb.rc:root/ueventd.geeb.rc \
+    device/lge/geehrc_intl/ramdisk/init.geehrc.rc:root/init.geehrc.rc \
+    device/lge/geehrc_intl/ramdisk/ueventd.geehrc.rc:root/ueventd.geehrc.rc \
     device/lge/geehrc_intl/ramdisk/fstab.gee:root/fstab.gee
 
 # These are the hardware-specific features
